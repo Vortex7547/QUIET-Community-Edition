@@ -1,6 +1,14 @@
 UnitBlueprint {
     Merge = true,
 	BlueprintId = "urb2204",
+
+    Defense = {
+        AirThreatLevel = 15,
+        ArmorType = 'Structure',
+        Health = 2050,
+        MaxHealth = 2050,
+        RegenRate = 2,
+    },
     
     Weapon = {
         {
