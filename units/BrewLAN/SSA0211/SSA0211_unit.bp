@@ -30,6 +30,14 @@ UnitBlueprint {
         Winged = true,
     },
 
+    Defense = {
+        ArmorType = 'Light',
+        Health = 975,
+        MaxHealth = 975,
+		RegenRate = 5,
+        SurfaceThreatLevel = 17,
+    },
+
     Intel = {
 		FreeIntel = true,
 
@@ -38,8 +46,8 @@ UnitBlueprint {
     },
 	
     Economy = {
-        BuildCostEnergy = 19000,
-        BuildCostMass = 775,
+        BuildCostEnergy = 15000,
+        BuildCostMass = 620,
     },
 	
     Weapon = {
