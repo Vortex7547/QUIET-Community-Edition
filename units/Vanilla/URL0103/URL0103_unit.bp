@@ -70,7 +70,7 @@ UnitBlueprint {
 	
     Economy = {
         BuildCostEnergy = 180,
-        BuildCostMass = 36,
+        BuildCostMass = 46,
         BuildTime = 200,
     },
 	
@@ -163,7 +163,7 @@ UnitBlueprint {
                     AppliedToTarget = true,
                     BuffType = 'STUN',
                     Duration = 3,
-                    Radius = 2,
+                    Radius = 1,
                     TargetAllow = 'TECH1',
 					TargetDisallow = "TECH2,WALL",
                 },
@@ -172,7 +172,7 @@ UnitBlueprint {
                     AppliedToTarget = true,
                     BuffType = "STUN",
                     Duration = 2,
-                    Radius = 2.55,
+                    Radius = 2,
                     TargetAllow = "TECH2",
                     TargetDisallow = "WALL",
                 },
@@ -196,9 +196,9 @@ UnitBlueprint {
             Label = 'MainGun',
 
             MaxRadius = 42,
-            MinRadius = 5,
+            MinRadius = 8,
 
-            MuzzleVelocity = 18,
+            MuzzleVelocity = 20,
             MuzzleVelocityReduceDistance = 28,
             ProjectileId = '/projectiles/CIFGrenade01/CIFGrenade01_proj.bp',
             ProjectileLifetimeUsesMultiplier = 3,
