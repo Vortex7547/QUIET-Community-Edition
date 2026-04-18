@@ -191,9 +191,9 @@ UnitBlueprint {
             Label = 'MainGun',
 
             MaxRadius = 42,
-            MinRadius = 5,
+            MinRadius = 7,
 
-            MuzzleVelocity = 18,
+            MuzzleVelocity = 22,
             MuzzleVelocityReduceDistance = 28,
 			ProjectileId = '/projectiles/SIFThunthoArtilleryShell01/SIFThunthoArtilleryShell01_proj.bp',
 			ProjectileLifetimeUsesMultiplier = 3,
