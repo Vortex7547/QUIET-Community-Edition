@@ -64,7 +64,7 @@ UnitBlueprint {
 	
     Economy = {
         BuildCostEnergy = 180,
-        BuildCostMass = 36,
+        BuildCostMass = 46,
         BuildTime = 200,
     },
 	
@@ -173,10 +173,10 @@ UnitBlueprint {
             Label = 'MainGun',
 
             MaxRadius = 42,
-            MinRadius = 5,
+            MinRadius = 7,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 18,
+            MuzzleVelocity = 21,
             MuzzleVelocityReduceDistance = 28,
 			ProjectileId = '/projectiles/TIFFragmentationSensorShell01/TIFFragmentationSensorShell01_proj.bp',
 			ProjectileLifetimeUsesMultiplier = 3,
