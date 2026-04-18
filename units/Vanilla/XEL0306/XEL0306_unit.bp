@@ -52,8 +52,8 @@ UnitBlueprint {
 			
             DisplayName = 'Cruise Missile',
             
-            EnergyRequired = 1950,
-            EnergyDrainPerSecond = 325,     -- 6 seconds charge
+            EnergyRequired = 900,
+            EnergyDrainPerSecond = 150,     -- 6 seconds charge
 			
             FireTargetLayerCapsTable = {
                 Land = 'Land|Water',
