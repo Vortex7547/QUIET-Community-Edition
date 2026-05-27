@@ -11,6 +11,7 @@ do
 	local TableInsert = table.insert
 
 	local MathMax = math.max
+	local MathMin = math.min
 	local MathFloor = math.floor
 	local MathSqrt = math.sqrt
 
@@ -176,6 +177,46 @@ do
 		for _, unit in units do
 			CalculateLODOfUnit(unit)
 		end
+	end
+
+	local function NormalizeExperimentalMass(massCost)
+		return MathMin(1, MathMax(0, (massCost - 10000) / 50000))
+	end
+
+	local function CalculateExperimentalHealthMultiplier(massCost)
+		local normalizedMass = NormalizeExperimentalMass(massCost)
+		return 1.08 + 0.82 * (normalizedMass ^ 0.95)
+	end
+
+	local function CalculateExperimentalHealthCeilingFactor(baseHealth)
+		local normalizedHealth = MathMin(1, MathMax(0, (baseHealth - 85000) / 115000))
+		return 1.00 - 0.75 * (normalizedHealth ^ 0.90)
+	end
+
+	local function CalculateExperimentalRegenFactor(regenRate)
+		local normalizedRegen = MathMin(1, MathMax(0, (regenRate - 20) / 80))
+		return 1.00 - 0.60 * (normalizedRegen ^ 0.85)
+	end
+
+	local function CalculateExperimentalBuildTime(massCost)
+		local normalizedMass = NormalizeExperimentalMass(massCost)
+		local buildTimeScalar = 1.15 + 0.69 * (normalizedMass ^ 0.95)
+		return MathMax(15000, MathFloor((massCost * buildTimeScalar) + 0.5))
+	end
+
+	local function ApplyExperimentalHealthScaling(bp, massCost)
+		if not (bp.Defense and (bp.Defense.MaxHealth or bp.Defense.Health)) then
+			return
+		end
+
+		local baseHealth = bp.Defense.MaxHealth or bp.Defense.Health
+		local regenRate = bp.Defense.RegenRate or 0
+		local baseBonus = CalculateExperimentalHealthMultiplier(massCost) - 1
+		local dampedBonus = baseBonus * CalculateExperimentalHealthCeilingFactor(baseHealth) * CalculateExperimentalRegenFactor(regenRate)
+		local scaledHealth = MathFloor((baseHealth * (1 + dampedBonus)) + 0.5)
+
+		bp.Defense.MaxHealth = scaledHealth
+		bp.Defense.Health = scaledHealth
 	end
 
 	--=======================================
@@ -363,6 +404,24 @@ do
 					end
 				end
 
+				if cats.SILO and cats.NUKE and cats.STRATEGIC and cats.STRUCTURE and cats.TECH3 then
+					if not bp.IgnoreEvenflow then
+						bp.IgnoreEvenflow = true
+					end
+
+					bp.Economy.BuildTime = bp.Economy.BuildTime * 0.73
+				end
+
+				if cats.GATE and cats.TECH3 and cats.STRUCTURE then
+					if not bp.IgnoreEvenflow then
+						bp.IgnoreEvenflow = true
+					end
+                    
+					bp.Economy.BuildTime = bp.Economy.BuildTime * 0.70
+					bp.Economy.BuildCostMass = bp.Economy.BuildCostMass * 0.75
+					bp.Economy.BuildCostEnergy = bp.Economy.BuildCostEnergy * 0.90
+				end
+
 				-- Adds DRAGBUILD to all Units
 				local CatsMisc = {
 					'DRAGBUILD',
@@ -370,6 +429,19 @@ do
 				for i, cat in CatsMisc do
 					if not cats[cat] then
 						table.insert(bp.Categories, cat)
+					end
+				end
+
+				-- Adds TIER3 Build Capabilities for Nuke & SMDs
+				local CatsMisc = {
+					"BUILTBYTIER3COMMANDER",
+        			"BUILTBYTIER3ENGINEER",
+				}
+				if cats.SILO and cats.NUKE and cats.STRATEGIC and cats.STRUCTURE and cats.TECH3 or cats.SILO and cats.ANTIMISSILE and cats.DEFENSE and cats.STRUCTURE and cats.TECH3 then
+					for i, cat in CatsMisc do
+						if not cats[cat] then
+							table.insert(bp.Categories, cat)
+						end
 					end
 				end
 
@@ -443,49 +515,13 @@ do
 					end
 
 					local massCost = bp.Economy.BuildCostMass
-					
-					-- Tiered cost reduction system
-					-- Handles "Tiers" of experimental units (from Light to Ultra Heavy)
-					if massCost >= 10000 and massCost <= 16000 then
-						-- Scale down to base 10k with gradual increase
-						if massCost <= 10500 then
-							bp.Economy.BuildCostMass = 10000
-						elseif massCost <= 12500 then
-							bp.Economy.BuildCostMass = 11000
-						elseif massCost <= 15000 then
-							bp.Economy.BuildCostMass = 12000
-						else
-							bp.Economy.BuildCostMass = 13000
-						end
-						
-						-- Scale energy cost proportionally
-						if bp.Economy.BuildCostEnergy then
-							local energyRatio = bp.Economy.BuildCostMass / massCost
-							bp.Economy.BuildCostEnergy = bp.Economy.BuildCostEnergy * energyRatio
-						end
-					elseif massCost >= 34500 then
-						-- 20% reduction for heavy experimentals
-						bp.Economy.BuildCostMass = massCost * 0.8
-						if bp.Economy.BuildCostEnergy then
-							bp.Economy.BuildCostEnergy = bp.Economy.BuildCostEnergy * 0.8
-						end
+
+					if bp.Economy.BuildTime then
+						bp.Economy.BuildTime = CalculateExperimentalBuildTime(massCost)
 					end
 
-					-- Scale build time based on mass cost
-					-- Base build time starts at 10k mass
-					-- Scales to 22k at 20k mass
-					-- Continues scaling from there
-					local baseMass = 10000
-					local baseBuildTime = 15000
-					
-					-- Calculate scaled build time
-					if not bp.IgnoreExperimentalModsBT then	
-						local massRatio = bp.Economy.BuildCostMass / baseMass
-						local scaledBuildTime = baseBuildTime * (massRatio * 0.8)
-					
-						-- Ensure minimum build time of 15000
-						bp.Economy.BuildTime = math.max(15000, scaledBuildTime)
-					end
+					-- Scale HP from the original mass tier
+					ApplyExperimentalHealthScaling(bp, massCost)
 				end
 			end
 		end
@@ -1085,6 +1121,11 @@ do
 			'bab2303',   -- Archangel
 			'beb2303',   -- Hellstorm
 			'srl0401',   -- Abyss Crawler
+			'brot1ml',   -- Wavecrest
+			'sea0401',   -- AC-500
+			'bra0409',   -- Gargantuan
+			'brmt1expdt2', -- Dual Microwave Pen
+			'brb2303', -- Squall
 		};
 		for i, bp in pairs(unitPruningId) do
 			if all_blueprints.Unit[bp] then
