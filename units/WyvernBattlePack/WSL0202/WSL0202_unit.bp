@@ -38,8 +38,14 @@ UnitBlueprint {
         ArmorType = "Normal",
         Health = 1250,
         MaxHealth = 1250,
-        RegenRate = 2,
+        RegenRate = 24,
         SurfaceThreatLevel = 10.6,
+    },
+
+    Economy = {
+        BuildCostEnergy = 1650,
+        BuildCostMass = 260,
+        BuildTime = 205,
     },
 
     Intel = {
