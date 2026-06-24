@@ -274,12 +274,12 @@ UnitBlueprint {
 			
             MaxRadius = 28,
 
-            MuzzleVelocity = 35,
+            MuzzleVelocity = 30,
 			
 			NotExclusive = true,
 			
             ProjectileId = '/projectiles/TDFGauss01/TDFGauss01_proj.bp',
-			ProjectileLifetime = 1,
+			ProjectileLifetime = 1.3,
 			
             RackBones = {
                 {
