@@ -43,8 +43,8 @@ UnitBlueprint {
 
 	Defense = {
 		ArmorType = "Normal",
-		Health = 2625,
-		MaxHealth = 2625,
+		Health = 2700,
+		MaxHealth = 2700,
 		RegenRate = 1,
 		SurfaceThreatLevel = 15.3, -- Same as Amphorak
 	},
@@ -76,7 +76,7 @@ UnitBlueprint {
 	},
 
 	Economy = {
-		BuildCostEnergy = 4060,
+		BuildCostEnergy = 4500,
 		BuildCostMass = 700,
 		BuildTime = 450,
 	},
@@ -110,9 +110,9 @@ UnitBlueprint {
 		BankingSlope = 0,
 		DragCoefficient = 0.2,
 		LayerChangeOffsetHeight = -0.75,
-		MaxAcceleration = 1.1,
+		MaxAcceleration = 2.0,
 		MaxBrake = 2.2,
-		MaxSpeed = 2.2,
+		MaxSpeed = 2.0,
 		MaxSpeedReverse = 2.2,
 		MaxSteerForce = 1000,
 		MeshExtentsX = 0.75,
@@ -120,8 +120,8 @@ UnitBlueprint {
 		MeshExtentsZ = 1.25,
 		MinSpeedPercent = 0,
 		MotionType = "RULEUMT_Amphibious",
-		TurnRadius = 0,
-		TurnRate = 35,
+		TurnRadius = 1,
+		TurnRate = 45,
 	},
 
 	SelectionSizeX = 0.8,
@@ -158,7 +158,7 @@ UnitBlueprint {
 			CollideFriendly = false,
 
 			Damage = 160,
-			DamageRadius = 1.5,
+			DamageRadius = 1.0,
 			DamageType = "Normal",
 
 			DisplayName = "Heavy Gauss Cannon",
