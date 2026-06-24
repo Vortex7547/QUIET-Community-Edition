@@ -44,8 +44,8 @@ UnitBlueprint {
 	
     Defense = {
         ArmorType = 'Normal',
-        Health = 1600,
-        MaxHealth = 1600,
+        Health = 3100,
+        MaxHealth = 3100,
         RegenRate = 1,
         SurfaceThreatLevel = 9.3,
     },
@@ -90,8 +90,8 @@ UnitBlueprint {
     },
 	
     Economy = {
-        BuildCostEnergy = 2100,
-        BuildCostMass = 315,
+        BuildCostEnergy = 3100,
+        BuildCostMass = 390,
         BuildTime = 250,
     },
 	
@@ -111,7 +111,7 @@ UnitBlueprint {
     },
 	
     Intel = {
-        VisionRadius = 24,
+        VisionRadius = 18,
         WaterVisionRadius = 20,
     },
 	
@@ -134,8 +134,8 @@ UnitBlueprint {
         LayerChangeOffsetHeight = -0.6,
 
         MaxAcceleration = 3.1,
-        MaxBrake = 3.1,
-        MaxSpeed = 3.1,
+        MaxBrake = 3.05,
+        MaxSpeed = 3.05,
         MaxSpeedReverse = 3,
         MaxSteerForce = 10,
         MeshExtentsX = 0.7,
@@ -146,7 +146,7 @@ UnitBlueprint {
         RotateOnSpot = false,
         RotateOnSpotThreshold = 0,
         TurnRadius = 5,
-        TurnRate = 90,
+        TurnRate = 100,
 		WaterSpeedMultiplier = 1.1,
     },
 	
@@ -185,7 +185,7 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
 			
-            Damage = 35,
+            Damage = 5,
             DamageType = 'Normal',
             DisplayName = 'Phasic Autogun',
 			
@@ -194,15 +194,15 @@ UnitBlueprint {
                 Seabed = 'Land|Water|Seabed',
             },
 			
-            FiringTolerance = 2,
+            FiringTolerance = 1.5,
             Label = 'LaserTurret',
 			
-            MaxRadius = 26,
+            MaxRadius = 23.5,
 			
-            MuzzleSalvoDelay = 0.2,
+            MuzzleSalvoDelay = 0.1,
             MuzzleSalvoSize = 2,
 
-            MuzzleVelocity = 25,
+            MuzzleVelocity = 33,
 			
             ProjectileId = '/projectiles/SDFPhasicAutogun01/SDFPhasicAutogun01_proj.bp',
 			ProjectileLifetime = 1.2,
@@ -216,7 +216,7 @@ UnitBlueprint {
 
             RangeCategory = 'UWRC_DirectFire',
 			
-            RateOfFire = 1,	-- 70 dps
+            RateOfFire = 10/5,	-- 20 dps
 
 			
             TargetPriorities = {
