@@ -48,6 +48,11 @@ UnitBlueprint {
         UniformScale = 0.06,
     },
 
+    Economy = {
+        BuildCostEnergy = 11500,
+        BuildCostMass = 1150,
+        BuildTime = 6000,
+
     Physics = {
         BankingSlope = 0,
         BuildOnLayerCaps = {
@@ -68,7 +73,7 @@ UnitBlueprint {
 
         StandUpright = false,
         TurnRadius = 0,
-        TurnRate = 90,
+        TurnRate = 80,
 		WaterSpeedMultiplier = 1.2,
     },
 
