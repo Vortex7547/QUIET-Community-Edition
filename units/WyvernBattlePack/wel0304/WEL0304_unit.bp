@@ -43,8 +43,8 @@ UnitBlueprint {
 
 	Defense = {
 		ArmorType = "Normal",
-		Health = 2700,
-		MaxHealth = 2700,
+		Health = 2500,
+		MaxHealth = 2500,
 		RegenRate = 1,
 		SurfaceThreatLevel = 15.3, -- Same as Amphorak
 	},
@@ -112,7 +112,7 @@ UnitBlueprint {
 		LayerChangeOffsetHeight = -0.75,
 		MaxAcceleration = 2.0,
 		MaxBrake = 2.2,
-		MaxSpeed = 2.0,
+		MaxSpeed = 2.2,
 		MaxSpeedReverse = 2.2,
 		MaxSteerForce = 1000,
 		MeshExtentsX = 0.75,
