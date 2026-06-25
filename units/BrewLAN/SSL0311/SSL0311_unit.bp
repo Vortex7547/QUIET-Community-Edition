@@ -5,6 +5,27 @@ UnitBlueprint {
     ScriptClass = 'SSL0311',
     ScriptModule = '/mods/QUIET-Community-Edition/units/BrewLAN/SSL0311/SSL0311_Script.lua',
 
+    Physics = {
+        BankingSlope = 0,
+        BuildOnLayerCaps = {
+            LAYER_Land = true,
+        },
+        DragCoefficient = 0.2,
+        MaxAcceleration = 3.65,
+        MaxBrake = 3.65,
+        MaxSpeed = 3.65,
+        MaxSpeedReverse = 0,
+        MaxSteerForce = 15,
+        MeshExtentsX = 1,
+        MeshExtentsY = 0.5,
+        MeshExtentsZ = 1,
+        MinSpeedPercent = 0,
+        MotionType = 'RULEUMT_Land',
+        RotateOnSpot = false,
+        TurnRadius = 1,
+        TurnRate = 65,
+    },
+
     Weapon = {
         {
             Damage = 29,
