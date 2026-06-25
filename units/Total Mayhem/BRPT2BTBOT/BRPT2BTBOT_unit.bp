@@ -38,7 +38,7 @@ UnitBlueprint {
         DragCoefficient = 0.2,
         MaxAcceleration = 1.1,
         MaxBrake = 2.2,
-        MaxSpeed = 2.1,
+        MaxSpeed = 2.2,
         MaxSpeedReverse = 2.2,
         MaxSteerForce = 3,
         MeshExtentsX = 1,
@@ -73,7 +73,7 @@ UnitBlueprint {
 			
             Label = 'MainGun',
 			
-            MaxRadius = 33,
+            MaxRadius = 32.5,
 
             MuzzleSalvoDelay = 0.2,
             MuzzleSalvoSize = 2,
