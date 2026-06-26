@@ -78,7 +78,7 @@ UnitBlueprint {
 			
             MaxRadius = 24,
 
-            MuzzleVelocity = 12,
+            MuzzleVelocity = 14,
 			
             ProjectileId = '/projectiles/SAAShleoAAGatlingGun05/SAAShleoAAGatlingGun05_proj.bp',
             ProjectileLifetime = 2.0,
