@@ -6,8 +6,8 @@ UnitBlueprint{
 
     Defense = {
         ArmorType = "Normal",
-        Health = 410,
-        MaxHealth = 410,
+        Health = 350,
+        MaxHealth = 350,
         RegenRate = 0,
         SurfaceThreatLevel = 3.9,
     },
@@ -55,7 +55,7 @@ UnitBlueprint{
             DisplayName = "Gauss Cannon",
 
             FireTargetLayerCapsTable = { Land = "Land|Water" },
-            FiringRandomness = 0.1,
+            FiringRandomness = 0.15,
             FiringRandomnessWhileMoving = 0.6,
             FiringTolerance = 2,
 
