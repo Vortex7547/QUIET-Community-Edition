@@ -14,6 +14,10 @@ UnitBlueprint {
 
     Weapon = {
         {
+
+            Damage = 15,
+            DamageType = 'Normal',
+
             MaxRadius = 35,
 
             MuzzleVelocity = 45,
