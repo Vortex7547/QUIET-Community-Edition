@@ -14,11 +14,11 @@ UnitBlueprint {
 
     Weapon = {
         {
-            MaxRadius = 35,
+            MaxRadius = 36,
             
             FiringTolerance = 3,
 
-            MuzzleVelocity = 20,
+            MuzzleVelocity = 21,
 
             ProjectileLifetimeUsesMultiplier = 1.5,
 
