@@ -160,8 +160,8 @@ UnitBlueprint {
         LayerChangeOffsetHeight = -1.1,
         
         MaxAcceleration = 1.2,
-        MaxBrake = 2.3,
-        MaxSpeed = 2.3,
+        MaxBrake = 2.35,
+        MaxSpeed = 2.35,
         MaxSpeedReverse = 2.3,
         MaxSteerForce = 10,
         MinSpeedPercent = 0,
