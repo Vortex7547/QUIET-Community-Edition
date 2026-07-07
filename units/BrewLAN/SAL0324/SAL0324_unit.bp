@@ -5,8 +5,8 @@ UnitBlueprint {
     Defense = {
         ArmorType = 'Normal',
 
-        Health = 250,
-        MaxHealth = 250,
+        Health = 2200,
+        MaxHealth = 2200,
 
         EconomyThreatLevel = 26,
     },
@@ -28,4 +28,29 @@ UnitBlueprint {
         VisionRadius = 40,
         WaterVisionRadius = 24,
     },
+
+    Physics = {
+        BankingSlope = 0,
+        BuildOnLayerCaps = {
+            LAYER_Land = true,
+        },
+        DragCoefficient = 0.2,
+        Elevation = 0.25,
+        MaxAcceleration = 1.86,
+        MaxBrake = 2.0,
+        MaxSpeed = 2.0,
+        MaxSpeedReverse = 0,
+        MaxSteerForce = 100,
+        MinSpeedPercent = 0,
+        MotionType = 'RULEUMT_Hover',
+        RotateBodyWhileMoving = true,
+        RotateOnSpot = true,
+        RotateOnSpotThreshold = 0.1,
+        TurnFacingRate = 120,
+        TurnRadius = 0,
+        TurnRate = 50,
+        WobbleFactor = 0.001,
+        WobbleSpeed = 0.001,
+    },
+
 }
