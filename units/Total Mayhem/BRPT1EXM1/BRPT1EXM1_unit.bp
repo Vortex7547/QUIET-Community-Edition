@@ -6,8 +6,8 @@ UnitBlueprint {
 
     Defense = {
         ArmorType = 'Normal',
-        Health = 350,
-        MaxHealth = 350,
+        Health = 340,
+        MaxHealth = 340,
         RegenRate = 1,
         SurfaceThreatLevel = 4.7,
     },
@@ -19,7 +19,7 @@ UnitBlueprint {
     },
 
     Intel = {
-        VisionRadius = 20,
+        VisionRadius = 18,
     },
 	
     Physics = {
@@ -70,13 +70,13 @@ UnitBlueprint {
                 Land = 'Land|Water|Seabed',
             },
 
-            FiringRandomness = 0.25,
+            FiringRandomness = 0.30,
 			FiringRandomnessWhileMoving = 0.25,
             FiringTolerance = 2,
 			
             Label = 'TauCannon01',
 			
-            MaxRadius = 24,
+            MaxRadius = 23,
 
             MuzzleVelocity = 14,
 			
