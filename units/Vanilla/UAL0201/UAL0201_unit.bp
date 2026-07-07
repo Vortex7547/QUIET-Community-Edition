@@ -114,9 +114,9 @@ UnitBlueprint {
         DragCoefficient = 0.2,
         Elevation = 0.25,
         
-        MaxAcceleration = 3,
+        MaxAcceleration = 2.91,
         MaxBrake = 15,
-        MaxSpeed = 3,
+        MaxSpeed = 2.81,
         MaxSpeedReverse = 3,
         
         MaxSteerForce = 3,
