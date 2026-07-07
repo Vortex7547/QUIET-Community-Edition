@@ -5,8 +5,8 @@ UnitBlueprint {
     Defense = {
         ArmorType = 'Normal',
 
-        Health = 250,
-        MaxHealth = 250,
+        Health = 2000,
+        MaxHealth = 200,
         RegenRate = 1,
 
         EconomyThreatLevel = 65,
@@ -30,5 +30,25 @@ UnitBlueprint {
         RadarStealth = true,
 		StealthWaitTime = 2,
         Cloak = true,
+    },
+
+    Physics = {
+        BankingSlope = 0,
+        BuildOnLayerCaps = {
+            LAYER_Land = true,
+        },
+        DragCoefficient = 0.2,
+        
+        MaxAcceleration = 1,
+        MaxBrake = 1.5,
+        MaxSpeed = 1.86,
+        MaxSpeedReverse = 0,
+        
+        MaxSteerForce = 10,
+        MinSpeedPercent = 0,
+        MotionType = 'RULEUMT_Land',
+
+        TurnRadius = 0,
+        TurnRate = 45,
     },
 }
