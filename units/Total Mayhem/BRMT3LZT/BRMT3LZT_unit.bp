@@ -181,7 +181,7 @@ UnitBlueprint {
             CollideFriendly = false,
 
             Damage = 48,
-            DamageRadius = 0,
+            DamageRadius = 1.6, -- 32m of AA AoE
             DamageType = 'Normal',
 
             DisplayName = 'Ionized Plasma Flak',
@@ -272,7 +272,7 @@ UnitBlueprint {
             CollideFriendly = false,
 
             Damage = 50,
-            DamageRadius = 0,
+            DamageRadius = 1.2, -- 24m AoE for LAND
             DamageType = 'Normal',
 
             DisplayName = 'Ionized Plasma Cannon',
