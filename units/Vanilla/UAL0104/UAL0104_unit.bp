@@ -20,10 +20,10 @@ UnitBlueprint {
             CannotAttackGround = true,
             CollideFriendly = false,
 			
-            Damage = 20,
+            Damage = 17,
             DamageType = 'Normal',
 
-            MaxRadius = 35,
+            MaxRadius = 34,
 
             MuzzleVelocity = 45,
 
