@@ -27,6 +27,13 @@ UnitBlueprint{
         SurfaceThreatLevel = 64.6,
     },
 
+    Economy = {
+        BuildCostEnergy = 34000,
+        BuildCostMass = 2500,
+        BuildTime = 1350,
+        MaintenanceConsumptionPerSecondEnergy = 75,
+    },
+
     Weapon = {
         {
             AboveWaterFireOnly = true,
