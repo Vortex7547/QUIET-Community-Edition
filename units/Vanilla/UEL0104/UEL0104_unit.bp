@@ -24,7 +24,7 @@ UnitBlueprint {
 
             ProjectileLifetimeUsesMultiplier = 1.5,
             
-            RateOfFire = 15/10,
+            RateOfFire = 35/30,
 			
             TurretYawSpeed = 120,
 
