@@ -22,7 +22,7 @@ UnitBlueprint {
 
             ProjectileLifetimeUsesMultiplier = 1.5,
 
-            ProjectileLifetime = 4.5,
+            ProjectileLifetime = 5.0,
 
             TurretYawSpeed = 135,
         },
