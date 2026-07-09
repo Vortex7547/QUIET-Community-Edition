@@ -103,7 +103,7 @@ UnitBlueprint {
             BallisticArc = "RULEUBA_LowArc",
             CollideFriendly = false,
 
-            Damage = 26,
+            Damage = 41,
             DamageType = "Normal",
 
             DisplayName = "Thau Cannon",
@@ -129,7 +129,7 @@ UnitBlueprint {
             RackRecoilDistance = -1,
 
             RangeCategory = "UWRC_DirectFire",
-            RateOfFire = 25/10,   -- 65 DPS
+            RateOfFire = 30/19,   -- 65 DPS
 
             TargetPriorities = {
                 "SPECIALHIGHPRI",
