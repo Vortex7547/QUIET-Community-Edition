@@ -8,6 +8,7 @@ UnitBlueprint {
         Health = 2750,
         MaxHealth = 2750,
         RegenRate = 35,
+    },
 
     Weapon = {
       {
