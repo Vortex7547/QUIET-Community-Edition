@@ -52,6 +52,7 @@ UnitBlueprint {
         BuildCostEnergy = 11500,
         BuildCostMass = 1150,
         BuildTime = 6000,
+    },
 
     Physics = {
         BankingSlope = 0,
@@ -72,8 +73,8 @@ UnitBlueprint {
         MotionType = 'RULEUMT_Amphibious',
 
         StandUpright = false,
-        TurnRadius = 0,
-        TurnRate = 80,
+        TurnRadius = 1,
+        TurnRate = 60,
 		WaterSpeedMultiplier = 1.2,
     },
 
