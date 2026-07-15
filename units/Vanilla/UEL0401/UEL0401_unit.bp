@@ -310,12 +310,9 @@ UnitBlueprint {
     Weapon = {
         {
 
-            RateOfFire = 10/10,
+            MaxRadius = 96,
 
-            TurretYawSpeed = 75,
-
-        },
-        {
+            MuzzleVelocity = 27,
 
             RateOfFire = 10/10,
 
@@ -324,12 +321,31 @@ UnitBlueprint {
         },
         {
 
+            MaxRadius = 96,
+
+            MuzzleVelocity = 27,
+
             RateOfFire = 10/10,
 
             TurretYawSpeed = 75,
 
         },
         {
+
+            MaxRadius = 96,
+
+            MuzzleVelocity = 27,
+
+            RateOfFire = 10/10,
+
+            TurretYawSpeed = 75,
+
+        },
+        {
+
+            MaxRadius = 96,
+
+            MuzzleVelocity = 27,
 
             RateOfFire = 10/10,
 
