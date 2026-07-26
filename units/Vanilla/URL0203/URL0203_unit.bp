@@ -100,13 +100,14 @@ UnitBlueprint {
                 Seabed = 'Land|Water|Seabed',
             },
             FiringTolerance = 2,
+            FiringRandomness = 1.1,
 			
             Label = 'Bolter',
             LeadTarget = true,
 			
-            MaxRadius = 22,
+            MaxRadius = 27.5,
 			
-            MuzzleSalvoDelay = 0.3,
+            MuzzleSalvoDelay = 0.5,
             MuzzleSalvoSize = 2,
 
             MuzzleVelocity = 38,
@@ -146,7 +147,7 @@ UnitBlueprint {
 			
             TurretYaw = 0,
             TurretYawRange = 180,
-            TurretYawSpeed = 37,
+            TurretYawSpeed = 45,
 			
             Turreted = true,
         },
@@ -163,7 +164,7 @@ UnitBlueprint {
             CollideFriendly = false,
 			
             Damage = 200,
-            DamageType = 'ShieldMult1.2',
+            DamageType = 'ShieldMult1.5',
 			
             DisplayName = 'Meson Rocket',
 			
@@ -184,7 +185,7 @@ UnitBlueprint {
             MuzzleVelocityReduceDistance = 2,
 			
             ProjectileId = '/projectiles/CDFRocketMeson01/CDFRocketMeson01_proj.bp',
-			ProjectileLifetime = 4,
+			ProjectileLifetime = 6,
 
             RackBones = {
                 {
@@ -217,7 +218,7 @@ UnitBlueprint {
 			
             TurretYaw = 0,
             TurretYawRange = 180,
-            TurretYawSpeed = 37,
+            TurretYawSpeed = 45,
             Turreted = true,
         },
 
@@ -245,10 +246,10 @@ UnitBlueprint {
             MaxRadius = 36,
             MinRadius = 4,
 			
-            MuzzleVelocity = 1,
+            MuzzleVelocity = 2,
             
             ProjectileId = '/projectiles/CANTorpedoNanite02/CANTorpedoNanite02_proj.bp',			
-            ProjectileLifetime = 5.5,
+            ProjectileLifetime = 7.5,
 
             RackBones = {
                 {
@@ -283,7 +284,7 @@ UnitBlueprint {
 			
             TurretYaw = 0,
             TurretYawRange = 180,
-            TurretYawSpeed = 37,
+            TurretYawSpeed = 45,
 			
             Turreted = false,
         },

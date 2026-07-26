@@ -14,7 +14,16 @@ UnitBlueprint {
 
     Weapon = {
         {
-            MaxRadius = 35,
+
+            BallisticArc = 'RULEUBA_None',
+
+            CannotAttackGround = true,
+            CollideFriendly = false,
+			
+            Damage = 17,
+            DamageType = 'Normal',
+
+            MaxRadius = 34,
 
             MuzzleVelocity = 45,
 

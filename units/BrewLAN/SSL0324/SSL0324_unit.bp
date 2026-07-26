@@ -5,8 +5,8 @@ UnitBlueprint {
     Defense = {
         ArmorType = 'Structure',
 
-        Health = 220,
-        MaxHealth = 220,
+        Health = 2200,
+        MaxHealth = 2200,
         RegenRate = 1,
 
         EconomyThreatLevel = 65,
@@ -19,7 +19,10 @@ UnitBlueprint {
 		
         MaintenanceConsumptionPerSecondEnergy = 1500,
     },
-	
+
+        FactionName = 'Seraphim',
+        Icon = 'amph',
+
     Intel = {
         ReactivateTime = 5,
         ShowIntelOnSelect = true,
@@ -28,5 +31,29 @@ UnitBlueprint {
         RadarRadius = 248,
         VisionRadius = 40,
 		WaterVisionRadius = 24,
+    },
+
+    Physics = {
+        BankingSlope = 0.5,
+        BuildOnLayerCaps = {
+            LAYER_Land = true,
+        },
+        DragCoefficient = 0.2,
+        Elevation = 0.25,
+        MaxAcceleration = 1.5,
+        MaxBrake = 2.0,
+        MaxSpeed = 2.0,
+        MaxSpeedReverse = 3,
+        MaxSteerForce = 1000,
+        MinSpeedPercent = 0,
+        MotionType = 'RULEUMT_Hover',
+        RotateBodyWhileMoving = true,
+        RotateOnSpot = true,
+        RotateOnSpotThreshold = 0.5,
+        TurnFacingRate = 120,
+        TurnRadius = 0,
+        TurnRate = 75,
+        WobbleFactor = 0.015,
+        WobbleSpeed = 0.001,
     },
 }

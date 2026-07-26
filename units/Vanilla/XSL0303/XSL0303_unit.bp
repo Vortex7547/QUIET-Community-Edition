@@ -48,6 +48,12 @@ UnitBlueprint {
         UniformScale = 0.06,
     },
 
+    Economy = {
+        BuildCostEnergy = 11500,
+        BuildCostMass = 1150,
+        BuildTime = 6000,
+    },
+
     Physics = {
         BankingSlope = 0,
         BuildOnLayerCaps = {
@@ -67,8 +73,8 @@ UnitBlueprint {
         MotionType = 'RULEUMT_Amphibious',
 
         StandUpright = false,
-        TurnRadius = 0,
-        TurnRate = 90,
+        TurnRadius = 1,
+        TurnRate = 60,
 		WaterSpeedMultiplier = 1.2,
     },
 

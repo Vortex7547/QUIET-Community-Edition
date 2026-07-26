@@ -2,6 +2,14 @@ UnitBlueprint {
     Merge = true,
     BlueprintId = "brmt3bt",
 
+    Defense = {
+        ArmorType = 'Normal',
+
+        Health = 2750,
+        MaxHealth = 2750,
+        RegenRate = 27,
+    },
+
     Weapon = {
       {
       
@@ -24,7 +32,7 @@ UnitBlueprint {
         TurretYawSpeed = 90,
       },
       {
-        Damage = 300,
+        Damage = 275,
 
         MaxRadius = 33,
 

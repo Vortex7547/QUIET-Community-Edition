@@ -24,9 +24,9 @@ UnitBlueprint {
 
     Defense = {
         ArmorType = 'Normal',
-        Health = 2625,
-        MaxHealth = 2625,
-        RegenRate = 2,
+        Health = 2400,
+        MaxHealth = 2400,
+        RegenRate = 4,
         SurfaceThreatLevel = 15.9,
     },
 	
@@ -85,7 +85,7 @@ UnitBlueprint {
             CollideFriendly = false,
 			
             Damage = 66,
-            DamageRadius = 1,
+            DamageRadius = 0.5,
             DamageType = 'Normal',
 			
             DisplayName = 'Rockets',

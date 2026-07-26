@@ -10,9 +10,9 @@ UnitBlueprint {
 
     Defense = {
         ArmorType = 'Normal',
-        Health = 2625,
-        MaxHealth = 2625,
-        RegenRate = 3,
+        Health = 2500,
+        MaxHealth = 2500,
+        RegenRate = 7,
 
         SurfaceThreatLevel = 15.6,
     },
@@ -73,7 +73,7 @@ UnitBlueprint {
 			
             Label = 'MainGun',
 			
-            MaxRadius = 33,
+            MaxRadius = 32.5,
 
             MuzzleSalvoDelay = 0.2,
             MuzzleSalvoSize = 2,

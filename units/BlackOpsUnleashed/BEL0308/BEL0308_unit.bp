@@ -272,14 +272,14 @@ UnitBlueprint {
             Label = 'GaussCannons',
             LeadTarget = true,
 			
-            MaxRadius = 28,
+            MaxRadius = 26.5,
 
-            MuzzleVelocity = 35,
+            MuzzleVelocity = 30,
 			
 			NotExclusive = true,
 			
             ProjectileId = '/projectiles/TDFGauss01/TDFGauss01_proj.bp',
-			ProjectileLifetime = 1,
+			ProjectileLifetime = 1.3,
 			
             RackBones = {
                 {
@@ -296,7 +296,7 @@ UnitBlueprint {
 
             RangeCategory = 'UWRC_DirectFire',
 			
-            RateOfFire = 3,		---- about 75 DPS
+            RateOfFire = 10/5,		---- about 50 DPS
 			
 			SlavedToBody = true,
 			SlavedToBodyArcRange = 180,

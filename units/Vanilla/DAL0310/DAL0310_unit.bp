@@ -108,8 +108,8 @@ UnitBlueprint {
         Elevation = 0.25,
         
         MaxAcceleration = 3.5,
-        MaxBrake = 3.5,
-        MaxSpeed = 3.5,
+        MaxBrake = 2.92,
+        MaxSpeed = 2.92,
         MaxSpeedReverse = 3.5,
         
         MaxSteerForce = 50,

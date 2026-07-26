@@ -38,8 +38,14 @@ UnitBlueprint {
         ArmorType = "Normal",
         Health = 1250,
         MaxHealth = 1250,
-        RegenRate = 2,
+        RegenRate = 18,
         SurfaceThreatLevel = 10.6,
+    },
+
+    Economy = {
+        BuildCostEnergy = 1650,
+        BuildCostMass = 260,
+        BuildTime = 205,
     },
 
     Intel = {
@@ -97,7 +103,7 @@ UnitBlueprint {
             BallisticArc = "RULEUBA_LowArc",
             CollideFriendly = false,
 
-            Damage = 26,
+            Damage = 41,
             DamageType = "Normal",
 
             DisplayName = "Thau Cannon",
@@ -123,7 +129,7 @@ UnitBlueprint {
             RackRecoilDistance = -1,
 
             RangeCategory = "UWRC_DirectFire",
-            RateOfFire = 25/10,   -- 65 DPS
+            RateOfFire = 30/19,   -- 65 DPS
 
             TargetPriorities = {
                 "SPECIALHIGHPRI",

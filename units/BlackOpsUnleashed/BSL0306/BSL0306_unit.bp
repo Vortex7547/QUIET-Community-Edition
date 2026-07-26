@@ -1,0 +1,168 @@
+UnitBlueprint {
+        Merge = true,
+        BlueprintId = "bsl0306",
+
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 1400, -- from 3400
+        MaxHealth = 1400,
+        RegenRate = 6,
+        SurfaceThreatLevel = 24.4,
+    },
+	
+    Description = '<LOC bsl0306_desc>Advanced Protector Bot',
+
+    Economy = {
+        BuildCostEnergy = 7750,
+        BuildCostMass = 685,
+        BuildTime = 3000,
+    },
+
+	
+    Intel = {
+		FreeIntel = true,
+		RadarRadius = 72,
+        VisionRadius = 32,
+    },
+	
+    Interface = {
+        HelpText = 'Advanced Protector Bot',
+    },
+	
+    LifeBarHeight = 0.08,
+    LifeBarOffset = 0.3,
+    LifeBarSize = 0.7,
+	
+    Physics = {
+        BankingSlope = 0,
+        BuildOnLayerCaps = {
+            LAYER_Land = true,
+        },
+        DragCoefficient = 0.2,
+
+        LayerChangeOffsetHeight = -0.85,
+        
+        MaxAcceleration = 3.0,
+        MaxBrake = 3.0,
+        MaxSpeed = 4.0,  -- from 3.0
+        MaxSpeedReverse = 3.0,
+        MaxSteerForce = 10,
+        MeshExtentsX = 0.8,
+        MeshExtentsY = 0.55,
+        MeshExtentsZ = 0.88,
+        MinSpeedPercent = 0,
+        MotionType = 'RULEUMT_Land',
+        RotateOnSpot = false,
+        RotateOnSpotThreshold = 0,
+        TurnRadius = 2, -- from 5
+        TurnRate = 125, -- from 65
+    },
+	
+    SelectionSizeX = 0.4,
+    SelectionSizeZ = 0.5,
+    SelectionThickness = 0.9,
+	
+    SizeX = 1.2,
+    SizeY = 1.0,
+    SizeZ = 1.2,
+	
+    StrategicIconName = 'icon_land3_cross',
+    StrategicIconSortPriority = 135,
+	
+    Transport = {
+        CanFireFromTransport = false,
+    },
+	
+    Veteran = {
+        Level1 = 4,
+        Level2 = 8,
+        Level3 = 12,
+        Level4 = 16,
+        Level5 = 20,
+    },
+	
+    Weapon = {
+        {
+            AboveWaterFireOnly = true,
+            AboveWaterTargetsOnly = true,
+            
+            Audio = {
+                Fire = Sound { Bank = 'XSL_Weapon', Cue = 'XSL0101_PhasicAutogun', LodCutoff = 'Weapon_LodCutoff'},
+            },
+            
+            BallisticArc = 'RULEUBA_None',
+            CollideFriendly = false,
+			
+            Damage = 15, -- from 60
+            DamageType = 'Normal',
+            DisplayName = 'Phasic Autogun',
+			
+            FireTargetLayerCapsTable = {
+                Land = 'Land|Water|Seabed',
+                Seabed = 'Land|Water|Seabed',
+            },
+			
+            FiringTolerance = 2,
+            Label = 'LaserTurret',
+			
+            MaxRadius = 28, -- from 30
+			
+            MuzzleSalvoDelay = 0.05,
+            MuzzleSalvoSize = 3,
+
+            MuzzleVelocity = 36,
+			
+            ProjectileId = '/projectiles/SDFPhasicAutogun01/SDFPhasicAutogun01_proj.bp',
+            ProjectileLifetime = 1,
+
+            RackBones = {
+                {
+                    MuzzleBones = {'Turret_Muzzle'},
+                    RackBone = 'Turret_Muzzle',
+                },
+            },
+
+            RangeCategory = 'UWRC_DirectFire',
+			
+            RateOfFire = 1,	-- 180 DPS
+
+			
+            TargetPriorities = {
+                'SPECIALHIGHPRI',
+                'MOBILE',
+                'DEFENSE',
+                'ALLUNITS -WALL',
+            },
+			
+            TargetRestrictDisallow = 'UNTARGETABLE',
+
+			
+            TurretBoneMuzzle = 'Turret_Muzzle',
+            TurretBonePitch = 'Turret_Muzzle',
+            TurretBoneYaw = 'Turret_Barrel',
+			
+            TurretPitch = 0,
+            TurretPitchRange = 180,
+            TurretPitchSpeed = 85,
+			
+            TurretYaw = 0,
+            TurretYawRange = 180,
+            TurretYawSpeed = 48,
+
+            Turreted = true,
+			
+            UseFiringSolutionInsteadOfAimBone = true,
+        },
+    },
+	
+    Wreckage = {
+        Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp',
+        EnergyMult = 0.4,
+        HealthMult = 0.9,
+        MassMult = 0.9,
+        ReclaimTimeMultiplier = 1,
+        WreckageLayers = {
+            Land = true,
+        },
+    },
+}

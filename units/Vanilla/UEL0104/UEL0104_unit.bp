@@ -14,13 +14,17 @@ UnitBlueprint {
 
     Weapon = {
         {
+
+            Damage = 15,
+            DamageType = 'Normal',
+
             MaxRadius = 35,
 
             MuzzleVelocity = 45,
 
             ProjectileLifetimeUsesMultiplier = 1.5,
             
-            RateOfFire = 15/10,
+            RateOfFire = 35/30,
 			
             TurretYawSpeed = 120,
 
