@@ -1,6 +1,12 @@
 UnitBlueprint {
     Merge = true,
 	BlueprintId = "brmt2medm",
+
+    Economy = {
+        BuildCostEnergy = 4200,
+        BuildCostMass = 740,
+        BuildTime = 3600,
+    },
     
     Display = {
         Abilities = {
@@ -24,8 +30,8 @@ UnitBlueprint {
 
     Defense = {
         ArmorType = 'Normal',
-        Health = 2400,
-        MaxHealth = 2400,
+        Health = 2200,
+        MaxHealth = 2200,
         RegenRate = 4,
         SurfaceThreatLevel = 15.9,
     },

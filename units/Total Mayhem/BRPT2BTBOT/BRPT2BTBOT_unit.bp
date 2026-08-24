@@ -3,16 +3,16 @@ UnitBlueprint {
     BlueprintId = "brpt2btbot",
 
     Economy = {
-        BuildCostEnergy = 4100,
-        BuildCostMass = 720,
-        BuildTime = 3750,
+        BuildCostEnergy = 4200,
+        BuildCostMass = 740,
+        BuildTime = 3600,
     },
 
     Defense = {
         ArmorType = 'Normal',
-        Health = 2500,
-        MaxHealth = 2500,
-        RegenRate = 7,
+        Health = 2300,
+        MaxHealth = 2300,
+        RegenRate = 4,
 
         SurfaceThreatLevel = 15.6,
     },
