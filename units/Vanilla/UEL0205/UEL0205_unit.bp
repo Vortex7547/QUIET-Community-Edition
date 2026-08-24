@@ -6,6 +6,12 @@ UnitBlueprint {
 		GuardReturnRadius = 45,
         GuardScanRadius = 35,
     },
+
+    Economy = {
+        BuildCostEnergy = 2000,
+        BuildCostMass = 200,
+        BuildTime = 1000,
+    },
 	
     Intel = {
         VisionRadius = 24,
