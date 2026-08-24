@@ -3,8 +3,8 @@ UnitBlueprint {
     BlueprintId = "uel0202",
 
     Defense = {
-        Health = 1500,
-        MaxHealth = 1500,
+        Health = 1400,
+        MaxHealth = 1400,
     },
 
     Physics = {

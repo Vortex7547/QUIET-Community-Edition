@@ -45,8 +45,8 @@ UnitBlueprint {
     Defense = {
         ArmorType = 'Normal',
 
-        Health = 1250,
-        MaxHealth = 1250,
+        Health = 1100,
+        MaxHealth = 1100,
         RegenRate = 0,
 
         Shield = {
@@ -55,7 +55,7 @@ UnitBlueprint {
             PersonalShield = true,
             RegenAssistMult = 60,
             ShieldEnergyDrainRechargeTime = 5,
-            ShieldMaxHealth = 1500,
+            ShieldMaxHealth = 1400,
             ShieldRechargeTime = 75,
             ShieldRegenRate = 10,
             ShieldRegenStartTime = 1,
