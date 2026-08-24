@@ -2,12 +2,12 @@ ProjectileBlueprint {
     Audio = {
         Impact = Sound {
             Bank = 'Impacts',
-            Cue = 'AEON_Expl_Med_Impact',
+            Cue = 'XSS_Missile_Impact',
             LodCutoff = 'Weapon_LodCutoff',
         },
         ImpactTerrain = Sound {
             Bank = 'Impacts',
-            Cue = 'Impact_Land_Gen_AEON',
+            Cue = 'XSS_Missile_Impact',
             LodCutoff = 'Weapon_LodCutoff',
         },
         ImpactWater = Sound {
@@ -17,7 +17,7 @@ ProjectileBlueprint {
         },
     },
     Categories = {
-        'AEON',
+        'SERAPHIM',
         'PROJECTILE',
         'INDIRECTFIRE',
         'TACTICAL',
@@ -31,27 +31,14 @@ ProjectileBlueprint {
     Display = {
         CameraFollowTimeout = 2,
         CameraFollowsProjectile = true,
-        Mesh = {
-            LODs = {
-                {
-                    LODCutoff = 150,
-                    ShaderName = 'NormalMappedAlpha',
-                },
-            },
+        ImpactEffects = {
+            Type = 'Medium01',
         },
         StrategicIconSize = 2,
-        UniformScale = 0.035,
     },
     General = {
         Category = 'Missile',
-        EntityCategory = {
-            'AEON',
-            'PROJECTILE',
-            'INDIRECTFIRE',
-            'MISSILE',
-            'NOSPLASHDAMAGE',
-        },
-        Faction = 'Aeon',
+        Faction = 'Seraphim',
     },
     Interface = {
         HelpText = 0,
@@ -61,11 +48,12 @@ ProjectileBlueprint {
         DestroyOnWater = true,
         InitialSpeed = 3,
         MaxSpeed = 14,
-        MaxZigZag = 4,
+        RotationalVelocity = 0,
+        RotationalVelocityRange = 0,
         TrackTarget = true,
         TrackTargetGround = true,
         TurnRate = 0,
+        UseGravity = false,
         VelocityAlign = true,
-        ZigZagFrequency = 0.4,
     },
 }

@@ -62,11 +62,11 @@ ProjectileBlueprint {
         HelpText = 0,
     },
     Physics = {
-        Acceleration = 3,
+        Acceleration = 6,
         DestroyOnWater = true,
         InitialSpeed = 3,
-        MaxSpeed = 12,
-        MaxZigZag = 1,
+        MaxSpeed = 14,
+        MaxZigZag = 0,
         RotationalVelocity = 0,
         RotationalVelocityRange = 0,
         TrackTarget = true,
@@ -74,6 +74,6 @@ ProjectileBlueprint {
         TurnRate = 0,
         UseGravity = false,
         VelocityAlign = true,
-        ZigZagFrequency = 1,
+        ZigZagFrequency = 0,
     },
 }
