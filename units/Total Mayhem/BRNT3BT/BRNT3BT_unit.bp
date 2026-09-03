@@ -16,7 +16,10 @@ UnitBlueprint {
 		-- rocket pods --
 		
 		{
-            MaxRadius = 44,
+
+            Damage = 75,
+            
+            MaxRadius = 40,
 
             MuzzleChargeDelay = 0.3,
 
