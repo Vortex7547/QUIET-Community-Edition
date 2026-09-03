@@ -36,8 +36,8 @@ UnitBlueprint {
 	
     Defense = {
         ArmorType = 'Normal',
-        Health = 260,
-        MaxHealth = 260,
+        Health = 250,
+        MaxHealth = 250,
         RegenRate = 2,
         SurfaceThreatLevel = 3.4,
     },
@@ -99,7 +99,7 @@ UnitBlueprint {
         
         MaxAcceleration = 2.55,
         MaxBrake = 15,
-        MaxSpeed = 2.55,
+        MaxSpeed = 2.75,
         MaxSpeedReverse = 2.55,
         MaxSteerForce = 2.55,
         
