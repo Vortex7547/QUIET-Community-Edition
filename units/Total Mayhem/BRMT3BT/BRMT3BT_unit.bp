@@ -13,18 +13,18 @@ UnitBlueprint {
     Weapon = {
       {
       
-        Damage = 35,
+        Damage = 25,
         
         FiringRandomness = 1,
 
         FiringRandomnessWhileMoving = 1.5,
 
-        MaxRadius = 42,
+        MaxRadius = 40,
         
         MuzzleSalvoDelay = 0.1,
         MuzzleSalvoSize = 6,
 
-        MuzzleVelocity = 30,
+        MuzzleVelocity = 25,
         MuzzleVelocityRandom = 0.5,
 
         RateOfFire = 1/10,
