@@ -31,7 +31,7 @@ UnitBlueprint {
 		
         MaxAcceleration = 1.1,
         MaxBrake = 2.65,
-        MaxSpeed = 2.65,
+        MaxSpeed = 2.85,
         MaxSpeedReverse = 0,
 		
         MaxSteerForce = 10,
