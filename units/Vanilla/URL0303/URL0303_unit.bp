@@ -51,8 +51,8 @@ UnitBlueprint {
         AntiMissile = { AttachBone = 'Turret_Muzzle', Radius = 6, RedirectRateOfFire = 1, ProjectileCategories = {'TACTICAL MISSILE'} },
         
         ArmorType = 'Normal',
-        Health = 2900,
-        MaxHealth = 2900,
+        Health = 3100,
+        MaxHealth = 3100,
         RegenRate = 2,
         SurfaceThreatLevel = 27.4,
     },
@@ -156,7 +156,7 @@ UnitBlueprint {
         MinSpeedPercent = 0,
         MotionType = 'RULEUMT_Land',
         StandUpright = true,
-        TurnRadius = 5,
+        TurnRadius = 4,
         TurnRate = 120,
     },
     
