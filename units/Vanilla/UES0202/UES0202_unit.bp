@@ -153,7 +153,7 @@ UnitBlueprint {
 			
             Label = 'FrontTurret01',
 			
-            MaxRadius = 66,
+            MaxRadius = 60,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 30,
