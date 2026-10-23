@@ -84,7 +84,7 @@ UnitBlueprint {
 
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 35,
+            MuzzleVelocity = 50,
             ProjectileId = "/projectiles/TDFGauss03/TDFGauss03_proj.bp",
             ProjectileLifetimeUsesMultiplier = 1.5,
             ProjectilesPerOnFire = 3,
@@ -188,7 +188,7 @@ UnitBlueprint {
             
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 35,
+            MuzzleVelocity = 50,
             ProjectileId = "/projectiles/TDFGauss03/TDFGauss03_proj.bp",
             ProjectileLifetimeUsesMultiplier = 1.5,
             ProjectilesPerOnFire = 3,
@@ -293,7 +293,7 @@ UnitBlueprint {
 
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 35,
+            MuzzleVelocity = 50,
             ProjectileId = "/projectiles/TDFGauss03/TDFGauss03_proj.bp",
             ProjectileLifetimeUsesMultiplier = 1.5,
             ProjectilesPerOnFire = 3,
